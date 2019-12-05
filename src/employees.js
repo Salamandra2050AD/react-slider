@@ -11,7 +11,8 @@ const employees = [
     jobTitle: "Founder",
     place: "Warsaw",
     avatar: avatar1,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Włas",
@@ -19,7 +20,8 @@ const employees = [
     jobTitle: "Founder",
     place: "Warsaw",
     avatar: avatar2,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Edyta",
@@ -27,7 +29,8 @@ const employees = [
     jobTitle: "Head of Human Resources",
     place: "Warsaw",
     avatar: avatar3,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Joanna",
@@ -35,7 +38,8 @@ const employees = [
     jobTitle: "Chief Growth Officer (CGO)",
     place: "London",
     avatar: avatar4,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "David",
@@ -43,7 +47,8 @@ const employees = [
     jobTitle: "Business Development",
     place: "London",
     avatar: avatar5,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Adam",
@@ -51,7 +56,8 @@ const employees = [
     jobTitle: "Bussines Development Director US",
     place: "Los Angeles",
     avatar: avatar1,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Maha",
@@ -59,7 +65,8 @@ const employees = [
     jobTitle: "Chief Bussiness Development Officer (CBDO)",
     place: "Warsaw",
     avatar: avatar2,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Elżbieta",
@@ -67,7 +74,8 @@ const employees = [
     jobTitle: "International Client Service Manager",
     place: "Warsaw",
     avatar: avatar3,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Karolina",
@@ -75,7 +83,8 @@ const employees = [
     jobTitle: "Creation Manager",
     place: "Warsaw",
     avatar: avatar4,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   },
   {
     firstName: "Kamil",
@@ -83,7 +92,8 @@ const employees = [
     jobTitle: "Head of Communication",
     place: "Warsaw",
     avatar: avatar5,
-    bgImage
+    bgImage,
+    Email: "example@example.com"
   }
 ];
 

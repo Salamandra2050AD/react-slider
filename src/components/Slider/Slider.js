@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { CSSTransitionGroup } from "react-transition-group";
-import ArrowLeft from "./ArrowLeft";
-import ArrowRight from "./ArrowRight";
+import CtrlButton from "./CtrlButton";
 import Slide from "./Slide";
-import Close from "./Close";
 
 export default class Slider extends Component {
   constructor(props) {
@@ -77,10 +75,9 @@ export default class Slider extends Component {
           >
             <Slide key={index} employee={employee} />
           </CSSTransitionGroup>
-
-          <ArrowLeft prev={this.handlerPrev} />
-          <ArrowRight next={this.handlerNext} />
-          <Close className="close-button" close={this.props.handleClose} />
+          <CtrlButton type="chevron-left" action={this.handlerPrev} />
+          <CtrlButton type="chevron-right" action={this.handlerNext} />
+          <CtrlButton type="times" action={this.props.handleClose} />
         </div>
       </div>
     );
