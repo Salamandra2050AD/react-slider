@@ -88,7 +88,9 @@ h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.modal-open {
+  overflow: hidden;
+}
 .slider-backdrop {
   position: fixed;
   width: 100%;
