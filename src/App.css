@@ -13,18 +13,11 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 main {
   background-image: url(./assets/bg.png);
-}
-
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: xxx-large;
-  font-family: "Blogger";
-  color: #452e76;
 }
 
 h2 {
@@ -37,6 +30,14 @@ h3 {
   font-weight: 300;
   font-size: calc(2vw + 5px);
   margin-bottom: 0px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: xxx-large;
+  font-family: "Blogger";
+  color: #452e76;
 }
 
 .container {
@@ -88,9 +89,11 @@ h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .modal-open {
   overflow: hidden;
 }
+
 .slider-backdrop {
   position: fixed;
   width: 100%;

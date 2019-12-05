@@ -13,6 +13,7 @@ export default function Team() {
 
   const hideModal = () => {
     setVisibility(false);
+    document.title = "Meet our team - IndaHash";
   };
 
   return (

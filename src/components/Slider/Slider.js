@@ -8,32 +8,19 @@ export default function Team(props) {
   const [next, setNext] = useState(true);
 
   const handlerPrev = () => {
-    let index = current,
-      length = props.employees.length;
-
-    if (index < 1) {
-      index = length;
-    }
-
-    setCurrent(index - 1);
+    let length = props.employees.length - 1;
+    current >= 1 ? setCurrent(current - 1) : setCurrent(length);
     setNext(false);
   };
 
   const handlerNext = () => {
-    let index = current,
-      length = props.employees.length - 1;
+    let length = props.employees.length - 1;
 
-    if (index === length) {
-      index = -1;
-    }
-
-    index = index + 1;
-    setCurrent(index);
-
+    current >= length ? setCurrent(0) : setCurrent(current + 1);
     setNext(true);
   };
+
   useEffect(() => {
-    document.body.classList.add("modal-open");
     document.title = `${props.employees[current].firstName} ${props.employees[current].lastName} - IDH ${props.employees[current].jobTitle}`;
   });
 
