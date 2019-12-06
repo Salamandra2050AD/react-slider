@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransitionGroup } from "react-transition-group";
+import styles from "./Slider.module.css";
 import CtrlButton from "./CtrlButton";
 import Slide from "./Slide";
 
@@ -25,22 +26,34 @@ export default function Team(props) {
   });
 
   return (
-    <div className="slider-backdrop">
-      <div id="slider">
+    <div className={styles.sliderBackdrop}>
+      <div>
         <CSSTransitionGroup
           transitionName={{
             apear: false,
-            enter: next ? "enter-next" : "enter-prev",
-            enterActive: "enter-active",
-            leave: "leave",
-            leaveActive: next ? "leave-active-next" : "leave-active-prev"
+            enter: next ? styles.enterNext : styles.enterPrev,
+            enterActive: styles.enterActive,
+            leave: styles.leave,
+            leaveActive: next ? styles.leaveActiveNext : styles.leaveActivePrev
           }}
         >
           <Slide key={current} employee={props.employees[current]} />
         </CSSTransitionGroup>
-        <CtrlButton type="chevron-left" action={handlerPrev} />
-        <CtrlButton type="chevron-right" action={handlerNext} />
-        <CtrlButton type="times" action={props.handleClose} />
+        <CtrlButton
+          style={[styles.midLeft, styles.ctrlBtn]}
+          iconType="chevron-left"
+          action={handlerPrev}
+        />
+        <CtrlButton
+          style={[styles.midRight, styles.ctrlBtn]}
+          iconType="chevron-right"
+          action={handlerNext}
+        />
+        <CtrlButton
+          style={[styles.topLeft, styles.ctrlBtn]}
+          iconType="times"
+          action={props.handleClose}
+        />
       </div>
     </div>
   );

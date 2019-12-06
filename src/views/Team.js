@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Team.module.css";
 import Slider from "../components/Slider/Slider";
 import employees from "../employees";
 import iconMsg from "../assets/icon_msg.png";
@@ -26,24 +27,24 @@ export default function Team() {
         ></Slider>
       ) : null}
 
-      <div className="container">
+      <div className={styles.container}>
         <h1>Meet our team</h1>
 
         {employees.map((employee, index) => {
           return (
             <div key={index}>
               <img
-                className="avatar"
+                className={styles.avatar}
                 onClick={() => showModal(index)}
                 src={employee.avatar}
                 alt=""
               />
-              <img className="mail" src={iconMsg} alt="" />
-              <p className="name">
+              <img className={styles.mail} src={iconMsg} alt="" />
+              <p className={styles.name}>
                 {employee.firstName + " " + employee.lastName}
               </p>
-              <p className="job-title">{employee.jobTitle}</p>
-              <p className="place">{employee.place}</p>
+              <p className={styles.jobTitle}>{employee.jobTitle}</p>
+              <p className={styles.place}>{employee.place}</p>
             </div>
           );
         })}

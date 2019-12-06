@@ -1,0 +1,77 @@
+.sliderBackdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../../assets/full_view_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;
+}
+
+.leave {
+  transform: translateX(0);
+}
+
+.enterActive.enterNext,
+.enterActive.enterPrev {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.enterNext {
+  transform: translateX(100%);
+}
+
+.enterPrev {
+  transform: translateX(-100%);
+  transition: transform 500ms linear;
+}
+
+.leaveActiveNext {
+  transform: translateX(-100%);
+  transition: transform 500ms linear;
+}
+
+.leave.leaveActivePrev {
+  transform: translateX(100%);
+  transition: transform 500ms linear;
+}
+
+.ctrlBtn {
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+}
+
+.midRight {
+  top: 50%;
+  right: 25px;
+}
+
+.midLeft {
+  top: 50%;
+  left: 25px;
+}
+
+.topLeft {
+  top: 40px;
+  right: 25px;
+}
+
+@media screen and (max-width: 300px) {
+  .midRight {
+    top: 50%;
+    right: 5px;
+  }
+  .midLeft {
+    top: 50%;
+    left: 5px;
+  }
+  .topLeft {
+    top: 20px;
+    right: 5px;
+  }
+}

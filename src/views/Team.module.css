@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Blogger";
+  src: url("../assets/fonts/BloggerSans.eot");
+  src: url("../assets/fonts/BloggerSans.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/BloggerSans.woff") format("woff"),
+    url("../assets/fonts/BloggerSans.ttf") format("truetype"),
+    url("../assets/fonts/BloggerSans.svg#svgFontName") format("svg");
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: xxx-large;
+  font-family: "Blogger";
+  color: #452e76;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.container div {
+  width: 20%;
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 180px;
+}
+
+.avatar {
+  width: 75%;
+  height: auto;
+  cursor: pointer;
+}
+
+.mail {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  top: 10px;
+  right: 10px;
+}
+
+.name {
+  color: #452e76;
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.jobTitle {
+  color: #5bc9e0;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.place {
+  color: rgb(129, 129, 129);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+}

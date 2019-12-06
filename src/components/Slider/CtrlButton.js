@@ -1,7 +1,7 @@
 import React from "react";
 
-const CtrlButton = ({ type, action }) => {
-  const classNames = ["fa", "fa-2x", `fa-${type}`, type];
+const CtrlButton = ({ style, iconType, action }) => {
+  const classNames = ["fa", "fa-2x", `fa-${iconType}`, ...style];
   return (
     <div onClick={action}>
       <i className={classNames.join(" ")} aria-hidden="true"></i>
